@@ -1,0 +1,198 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  box-sizing: border-box;
+  
+}
+
+body,
+html {
+
+  font-family: "futura-pt", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  background-color: #F5F5F5;
+}
+.carousel {
+  border-radius: 20px !important;
+}
+.react-datepicker-popper {  z-index: 100 !important }
+
+legend {
+  border-bottom: 1px solid #6DB33F;
+}
+
+.muted {
+  color: #666666;
+  padding: 5em 0 0 0;
+}
+
+#mainVisaMastercardLogos {
+  float: right;
+}
+
+#mainAmexDinersLogos {
+  float: right;
+  margin-top: 5px;
+}
+
+@media (max-width: 445px) {
+  #mainVisaMastercardLogos {
+      float: none;
+  }
+
+  #mainAmexDinersLogos {
+      float: none;
+  }
+
+  #mainPageHeader {
+      text-align: center;
+  }
+}
+
+@media (min-width: 992px) { /* Two column layout */
+  .extra-space {
+      padding-bottom: 1.0em;
+  }
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+  color: #000000;
+
+  /* Targeting Safari on iPad and iPhone specifically. Trying to make the textbox text black. */
+  -webkit-text-fill-color: rgba(0, 0, 0, 1);
+  -webkit-opacity: 1;
+}
+
+/** <editor-fold desc="Server Error Slide Down"> */
+#serverError {
+  font-size: 12px;
+  color: #000000;
+  background-color: #f2dede;
+
+  border: 1px solid #B94A48;
+  box-shadow: 2px 2px 10px #555;
+
+  position:fixed;
+  top: 0;
+  left: 0;
+  padding: 0  10px 10px;
+  width: 100%;
+  text-align: center;
+
+  z-index: 10001;
+}
+
+#serverError p {
+  color: #000000;
+  padding-top: 10px;
+}
+
+#serverError p img {
+  padding-right: 10px;
+  vertical-align: text-bottom;
+}
+
+#serverError .close-error {
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+#serverError .indent {
+  padding-left: 10px;
+}
+
+ul.inputs {
+list-style: none;
+padding-left: 0;
+}
+
+ul.inputs li {
+padding-top: 10px;
+}
+
+/** </editor-fold> */
+
+@media (min-width: 992px) {
+  /* Two column layout */
+  span.help-block[for="cardNumber"] {
+      position: absolute;
+  }
+}
+
+/* <editor-fold desc="Override submit button styling">*/
+.btn-pay-now .badge {
+  color: #3f8cf6;
+}
+
+.btn-pay-now {
+  color: #ffffff;
+  background-color: #3f8cf6;
+  border-color: #3f8cf6;
+
+}
+
+.btn-pay-now.disabled,
+.btn-pay-now[disabled],
+fieldset[disabled] .btn-pay-now,
+.btn-pay-now.disabled:hover,
+.btn-pay-now[disabled]:hover,
+fieldset[disabled] .btn-pay-now:hover,
+.btn-pay-now.disabled:focus,
+.btn-pay-now[disabled]:focus,
+fieldset[disabled] .btn-pay-now:focus,
+.btn-pay-now.disabled:active,
+.btn-pay-now[disabled]:active,
+fieldset[disabled] .btn-pay-now:active,
+.btn-pay-now.disabled.active,
+.btn-pay-now[disabled].active,
+fieldset[disabled] .btn-pay-now.active {
+  background-color: #3f8cf6;
+  color: #ffffff;
+  border-color: #2e6da3;
+}
+
+.btn-pay-now {
+  background-image: -webkit-linear-gradient(top, #3f8cf6 0%, #2e6da3 100%);
+  background-image: linear-gradient(to bottom, #3f8cf6 0%, #2e6da3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff3f8cf6', endColorstr='#ff2e6da3', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  border-color: #2e6da3;
+}
+
+.btn-pay-now:hover,
+.btn-pay-now:focus,
+.btn-success:active,
+.btn-success.active {
+  background-color: #2e6da3;
+  border-color: #2e6da3;
+}
+
+/* </editor-fold>*/
+
+
+label em {
+color: red;
+}
+
+.main {
+margin-left: 0px;
+margin-right: 0px;
+}
+
+span#whatisthis > span {
+display: none;
+}
+span#whatisthis:hover > span {
+display: inline;
+position: absolute;
+left: -1em;
+}
+span#whatisthis {
+text-decoration: underline;
+color: #0000FF;
+}
